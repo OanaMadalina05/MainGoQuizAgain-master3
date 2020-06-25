@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Register"
+android:textSize="24dp"
+android:fontFamily="sans-serif-black" />
+<TextView
+android:id="@+id/input"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+
+<TextView
+android:id="@+id/usernameText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="110dp"
+android:text="Username:"
+android:textSize="24dp"
+android:fontFamily="sans-serif-black"
+android:layout_below="@+id/title"
+    />
+
+<TextView
+android:id="@+id/passText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Password"
+android:textSize="24dp"
+android:layout_marginTop="60dp"
+android:fontFamily="sans-serif-black"
+android:layout_below="@+id/usernameText"
+    />
+<EditText
+android:id="@+id/usernameInputReg"
+android:layout_width="200dp"
+android:layout_below="@id/title"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_marginTop="110dp"/>
+<EditText
+android:id="@+id/passwordInputReg"
+android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="60dp"
+android:layout_alignParentRight="true"
+android:layout_below="@+id/usernameText"
+    />
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/regButton"
+android:text="Register"
+android:layout_below="@+id/passText"
+android:layout_marginTop="190dp"
+android:onClick="addUsers"
+    />
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/exitButton"
+android:text="Exit"
+android:layout_below="@+id/passText"
+android:layout_marginTop="190dp"
+android:layout_alignParentRight="true"
+
+    />
+    </RelativeLayout>
